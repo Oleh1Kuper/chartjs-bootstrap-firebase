@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Chart JS Database Connection</title>
+    <style>
+      .update-btn {
+        border-radius: 5px;
+        padding: 5px;
+        color: #fff;
+      }
+      #btn-a {
+        border: 1px solid rgb(255, 159, 64);
+        background-color: rgb(255, 159, 64);
+      }
+      #btn-b {
+        border: 1px solid rgb(255, 99, 132);
+        background-color: rgb(255, 99, 132);
+      }
+    </style>
+  </head>
+  <body class="alert-warning">
+
+
+    <div class="col-md-6 offset-md-3 p-5">
+      <div class="card">
+        <div class="card-body">
+          <h1>Chart JS Database Connection</h1>
+
+          <button type="button" id="btn-a" class="update-btn" data-bs-toggle="modal" data-bs-target="#chartModal">
+            Update Data Company A
+          </button>
+
+          <button type="button" id="btn-b" class="update-btn" data-bs-toggle="modal" data-bs-target="#chartModal">
+            Update Data Company B
+          </button>
+        </div>
+
+        <div class="card-body">
+          <canvas id="myChart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="chartModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel"></h5>
+            <button type="button" class="btn-close clear-form" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+
+          <div class="modal-body">
+            <form class="form">
+            </form>
+          </div>
+
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary clear-form" data-bs-dismiss="modal">Close</button>
+            <button type="button" id="save_btn" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
