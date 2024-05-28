@@ -62,9 +62,10 @@ updateBtns.forEach(btn => {
   
     if (btn.id === 'btn-a') {
       modalTitle.innerHTML = 'Company A';
-      index = 0
+      index = 0;
     } else {
       modalTitle.innerHTML = 'Company B';
+      index = 1;
     }
   
     dataFromDB[0].labels.forEach((item, i) => {
@@ -93,7 +94,6 @@ saveBtn.addEventListener('click', async () => {
     data.push(+item.value);
   });
 
-  console.log(dataFromDB[index].id);
   const docRef = doc(db, 'monthsData', dataFromDB[index].id);
 
   try {
