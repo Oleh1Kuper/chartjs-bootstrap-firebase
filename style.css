@@ -1,0 +1,15 @@
+.update-btn {
+  border-radius: 5px;
+  padding: 5px;
+  color: #fff;
+}
+
+#btn-a {
+  border: 1px solid rgb(255, 159, 64);
+  background-color: rgb(255, 159, 64);
+}
+
+#btn-b {
+  border: 1px solid rgb(255, 99, 132);
+  background-color: rgb(255, 99, 132);
+}
